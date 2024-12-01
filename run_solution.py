@@ -15,6 +15,8 @@ def main(day: int, problem: str, data: str) -> None:
     program = getattr(mod, problem)
     solution = program(input_data)
 
+    print(solution)
+
     with open(output_path, "w") as f:
         f.write(solution)
 
