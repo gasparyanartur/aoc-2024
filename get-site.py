@@ -1,8 +1,12 @@
 import argparse
 import os
+import webbrowser
 
 def main(day: int, year: int) -> None:
-    print(f"https://adventofcode.com/{year}/day/{day}")
+    url = f"https://adventofcode.com/{year}/day/{day}"
+    print(url)
+    webbrowser.open(url, autoraise=True)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
